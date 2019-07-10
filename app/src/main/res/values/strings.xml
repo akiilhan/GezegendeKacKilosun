@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GezegendeKacKilosun</string>
+    <string name="appBaslik">How Much Would You Weight on Other Planets?</string>
+    <string name="enter_your_weight">Enter your Weight (Kg)</string>
+    <string name="calculate">Calculate</string>
+    <string name="mercury">Mars</string>
+    <string name="sonuc">Sonuc</string>
+    <string name="venus">Venus</string>
+    <string name="mercuryy">Mercury</string>
+
+</resources>

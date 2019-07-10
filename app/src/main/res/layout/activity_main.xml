@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@drawable/stars">
+    <TextView
+            android:text="@string/mercury"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mercury2"
+            android:textColor="@android:color/background_light" android:fontFamily="@font/russo_one"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/calculateBtn"
+            android:textSize="18sp" app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"/>
+    <TextView
+            android:text="@string/appBaslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:id="@+id/tvBaslik" android:textSize="18sp"
+            android:fontFamily="@font/russo_one" android:textColor="@android:color/background_light"
+            android:textAlignment="center" android:textStyle="bold" android:textAllCaps="false"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_your_weight"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/kilo"
+            android:fontFamily="@font/russo_one"
+            android:textColor="@android:color/background_light" android:textAlignment="viewStart"
+            android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+            android:textColorHint="@android:color/background_light"
+            android:textColorLink="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_light" android:textSize="14sp"
+            android:shadowColor="#F7F6F4" android:inputType="numberDecimal" android:autofillHints=""
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/checkUranus"/>
+    <Button
+            android:text="@string/calculate"
+            android:layout_width="89dp"
+            android:layout_height="19dp"
+            android:id="@+id/calculateBtn" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/kilo" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/background_light" android:lineSpacingExtra="8sp"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/mars"
+            android:id="@+id/imageView3" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/mercury" app:layout_constraintTop_toBottomOf="@+id/mercury2"
+            android:scaleType="fitEnd" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"/>
+    <TextView
+            android:text=""
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/imageView3" app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            android:id="@+id/sonucMars" android:textColor="@android:color/background_light" android:textSize="18sp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            android:layout_marginStart="8dp" android:fontFamily="@font/russo_one" android:textAlignment="center"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/mercury"
+            android:id="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" app:layout_constraintBottom_toTopOf="@+id/sonucMars"
+            app:layout_constraintVertical_bias="0.0" android:scaleType="fitEnd"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView3" android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="@string/mercuryy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mercury" app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            android:textColor="@android:color/background_light" android:fontFamily="@font/russo_one"
+            app:layout_constraintBottom_toTopOf="@+id/imageView3" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/calculateBtn"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sonucMercury"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView" android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sonucMars" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" android:textColor="@android:color/background_light"
+            android:fontFamily="@font/russo_one" android:textAlignment="center"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/venus"
+            android:id="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/mercury"
+            android:scaleType="fitEnd" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView" android:layout_marginStart="8dp"
+            android:layout_marginTop="3dp"/>
+    <TextView
+            android:text="@string/venus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/venus" app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2" android:fontFamily="@font/russo_one"
+            android:textColor="@android:color/background_light" android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/calculateBtn"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sonucVenus" app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2" android:textColor="@android:color/background_light"
+            android:textSize="18sp" android:fontFamily="@font/russo_one" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" android:textAlignment="center"/>
+    <CheckBox
+            android:text="Jupiter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkJupiter"
+            style="@android:style/Widget.Material.Button.Colored"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/kilo"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/tvBaslik"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/checkUranus"/>
+    <CheckBox
+            android:text="Uranus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkUranus"
+            style="@android:style/Widget.Material.Button.Colored" app:layout_constraintStart_toEndOf="@+id/checkJupiter"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvBaslik" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/checkSaturn" app:layout_constraintHorizontal_bias="0.5"/>
+    <CheckBox
+            android:text="Saturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkSaturn"
+            style="@android:style/Widget.Material.Button.Colored" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/kilo" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvBaslik" app:layout_constraintStart_toEndOf="@+id/checkUranus"
+            app:layout_constraintHorizontal_bias="0.5"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/saturn"
+            android:id="@+id/saturn"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/sonucVenus" app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="@+id/imageView2"
+    />
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/uranus"
+            android:id="@+id/uranus" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/sonucMercury"
+            app:layout_constraintStart_toStartOf="@+id/imageView" app:layout_constraintEnd_toEndOf="@+id/imageView"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/jupiter"
+            android:id="@+id/Jupiter"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/sonucMars"
+            app:layout_constraintStart_toStartOf="@+id/imageView3" app:layout_constraintEnd_toEndOf="@+id/imageView3"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sonucUranus" app:layout_constraintStart_toStartOf="@+id/uranus"
+            app:layout_constraintEnd_toEndOf="@+id/uranus" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/uranus"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sonucSaturn" app:layout_constraintEnd_toEndOf="@+id/saturn"
+            app:layout_constraintStart_toStartOf="@+id/saturn" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/saturn"/>
+    <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sonucJupiter" app:layout_constraintStart_toStartOf="@+id/Jupiter"
+            app:layout_constraintEnd_toEndOf="@+id/Jupiter" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/Jupiter" app:fontFamily="@font/russo_one"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:textColor="@android:color/background_light"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
