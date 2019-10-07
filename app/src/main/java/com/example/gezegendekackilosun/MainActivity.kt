@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener{
 
-
+    
     val KILO_TO_POUND:Double = 2.2045
     val POUND_TO_KILO:Double = 0.45
     val MARS:Double= 0.38 //pound
